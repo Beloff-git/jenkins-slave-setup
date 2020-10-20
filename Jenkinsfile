@@ -13,7 +13,7 @@ pipeline {
         //            pip install ansible
         //        """
         //    } //steps
-        } //stage
+        //} stage
         stage("Build") {
             steps {
                 sh """
