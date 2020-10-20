@@ -7,12 +7,12 @@ pipeline {
         } //docker
     } //agent
     stages {
-        stage("Set up") {
-            steps {
-                sh """
-                    pip install ansible
-                """
-            } //steps
+        //stage("Set up") {
+        //    steps {
+        //        sh """
+        //            pip install ansible
+        //        """
+        //    } //steps
         } //stage
         stage("Build") {
             steps {
