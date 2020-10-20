@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'ansible/ansible:default'
             label 'slave-builder'
-            args '- u 0:0 -v /home/jenkins/.ssh:/root/.ssh'
+            args '-u 0:0 -v /home/jenkins/.ssh:/root/.ssh'
         } //docker
     } //agent
     stages {
