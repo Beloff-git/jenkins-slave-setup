@@ -41,8 +41,10 @@
     state: directory
     owner: jenkins
     group: jenkins
+    mode: '0700'
 
 - name: Copy master Jenkins public key
   copy:
     src: authorized_keys
     dest: /home/jenkins/.ssh/authorized_keys
+    mode: '0600'
